@@ -1,21 +1,7 @@
 # MOA Flask Server Version 2.0
+## 대학생 공동구매 플랫폼 MOA
 
-### 사용법
-```
-git clone https://github.com/HGUMOA/MOA_server_v2.git
-cd MOA_server_v2
-pip install -r requirements.txt
-flask run
-```
+<img width="1440" alt="스크린샷 2021-05-03 오전 12 57 46" src="https://user-images.githubusercontent.com/48133047/116819380-d6b66600-abaa-11eb-89f3-fb4bb1e6d640.png">
 
-### 사용법 For MOA Developers
-```
-cd v2_moa_server
-conda activate moav2
-flask run -h "0.0.0.0"
-```
+![merge](https://user-images.githubusercontent.com/48133047/116819269-555ed380-abaa-11eb-881c-f8a4e68fbe0e.png)
 
-+ 코드 수정하면서 서버 돌리고 싶으면 이 명령어도 실행 (=>코드가 수정되면 서버가 자동 reload 된다.)
-```
-export FLASK_ENV=development
-```
