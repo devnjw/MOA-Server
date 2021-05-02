@@ -1,4 +1,4 @@
-# MOA Flask Server Version 2.0
+# MOA Flask Server (public)
 ## 대학생 공동구매 플랫폼 MOA
 
 <img width="1100" alt="스크린샷 2021-05-03 오전 1 07 46" src="https://user-images.githubusercontent.com/48133047/116819685-0a45c000-abac-11eb-8460-c7c65887303d.png">
