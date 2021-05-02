@@ -2,7 +2,7 @@
 from marshmallow import fields
 from marshmallow_sqlalchemy import ModelSchema
 from .models.participant_model import Participant, ParticipantLog
-from .models.room_model import Room, RoomLog
+from .models.chat_model import Chat, ChatLog
 from .models.user_model import User, BlackList
 from .models.receipt_model import Receipt, ReceiptImage
 
@@ -13,19 +13,19 @@ class UserSchema(ModelSchema):
 
 users_schema = UserSchema(many=True)
 
-class RoomSchema(ModelSchema):
+class ChatSchema(ModelSchema):
     class Meta:
-        model = Room
+        model = Chat
 
-room_schema = RoomSchema()
-rooms_schema = RoomSchema(many=True)
+chat_schema = ChatSchema()
+chats_schema = ChatSchema(many=True)
 
-class RoomLogSchema(ModelSchema):
+class ChatLogSchema(ModelSchema):
     class Meta:
-        model = RoomLog
+        model = ChatLog
 
-room_log_schema = RoomLogSchema()
-room_logs_schema = RoomLogSchema(many=True)
+chat_log_schema = ChatLogSchema()
+chat_logs_schema = ChatLogSchema(many=True)
 
 class ParticipantSchema(ModelSchema):
     class Meta:

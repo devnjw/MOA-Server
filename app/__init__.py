@@ -19,18 +19,18 @@ def create_app():
 
     from . import models
 
-    from .controller.room_controller import RoomList, Room, RoomStatus, MyRoomList, \
-        RoomOG, RoomLog, MyRoomLog
-    api.add_resource(RoomList, '/room')
-    api.add_resource(Room, '/room/<room_id>')
-    api.add_resource(RoomStatus, '/room/status/<room_id>')
-    api.add_resource(MyRoomList, '/room/my/<email>')
-    api.add_resource(RoomOG, '/room/og')
-    api.add_resource(RoomLog, '/room/log')
-    api.add_resource(MyRoomLog, '/room/log/<email>')
+    from .controller.chat_controller import ChatList, Chat, ChatStatus, MyChatList, \
+        ChatOG, ChatLog, MyRoomLog
+    api.add_resource(ChatList, '/chat')
+    api.add_resource(Chat, '/chat/<chat_id>')
+    api.add_resource(ChatStatus, '/chat/status/<chat_id>')
+    api.add_resource(MyChatList, '/chat/my/<email>')
+    api.add_resource(ChatOG, '/chat/og')
+    api.add_resource(ChatLog, '/chat/log')
+    api.add_resource(MyChatLog, '/chat/log/<email>')
 
     from .controller.participant_controller import ParticipantList, Participant
-    api.add_resource(ParticipantList, '/participant/<room_id>')
+    api.add_resource(ParticipantList, '/participant/<chat_id>')
     api.add_resource(Participant, '/participant')
 
     from .controller.user_controller import UserList, UserPhone, UserAuth
@@ -38,12 +38,12 @@ def create_app():
     api.add_resource(UserAuth, '/user/<email>')
     api.add_resource(UserPhone, '/user/phone')
 
-    from .controller.receipt_controller import Receipt, ReceiptList, ReceiptImageList, \
-        MyReceiptImage, NewReceiptImage
-    api.add_resource(ReceiptList, '/receipt/<room_id>')
-    api.add_resource(Receipt, '/receipt/<room_id>/<user_email>')
-    api.add_resource(ReceiptImageList, '/receipt/image/<room_id>')
-    api.add_resource(MyReceiptImage, '/receipt/image/<room_id>/<user_email>')
-    api.add_resource(NewReceiptImage, '/receipt/image/<room_id>/<user_email>/<cost>')
+    from .controller.bill_controller import Bill, BillList, BillImageList, \
+        MyBillImage, NewBillImage
+    api.add_resource(BillList, '/bill/<chat_id>')
+    api.add_resource(Bill, '/bill/<chat_id>/<user_email>')
+    api.add_resource(BillImageList, '/bill/image/<chat_id>')
+    api.add_resource(MyBillImage, '/bill/image/<chat_id>/<user_email>')
+    api.add_resource(NewBillImage, '/bill/image/<chat_id>/<user_email>/<cost>')
 
     return app

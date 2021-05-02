@@ -1,6 +1,6 @@
 from app import db
 
-class Room(db.Model):
+class Chat(db.Model):
     __tablename__ = 'room'
     rid = db.Column(db.Integer, unique=True, primary_key=True, autoincrement=True, nullable=False)
     status = db.Column(db.VARCHAR(15))
@@ -20,13 +20,13 @@ class Room(db.Model):
         return "<Room(rid='{}', category='{}', title={}, place={}, creator_name={}, num_user={}, create_time={}, update_time={})>"\
             .format(self.rid, self.category, self.title, self.place, self.creator_name, self.num_user, self.create_time, self.update_time)
 
-class RoomOG(db.Model):
+class ChatOG(db.Model):
     id = db.Column(db.Integer, unique=True, primary_key=True, autoincrement=True, nullable=False)
-    room_id = db.Column(db.Integer, unique=True, nullable=False)
+    chat_id = db.Column(db.Integer, unique=True, nullable=False)
     image_url = db.Column(db.VARCHAR(255))
     og_title = db.Column(db.VARCHAR(45))
 
-class RoomLog(db.Model):
+class ChatLog(db.Model):
     __tablename__ = 'room_log'
     id = db.Column(db.Integer, unique=True, primary_key=True, autoincrement=True, nullable=False)
     rid = db.Column(db.Integer, unique=True, nullable=False)
@@ -45,5 +45,5 @@ class RoomLog(db.Model):
     deleted_time = db.Column(db.TIMESTAMP)
 
     def __repr__(self):
-        return "<RoomLog(rid='{}', category='{}', title={}, place={}, creator_name={}, num_user={}, create_time={}, update_time={}, deleted_time={})>"\
+        return "<ChatLog(rid='{}', category='{}', title={}, place={}, creator_name={}, num_user={}, create_time={}, update_time={}, deleted_time={})>"\
             .format(self.rid, self.category, self.title, self.place, self.creator_name, self.num_user, self.create_time, self.update_time, self.deleted_time)
