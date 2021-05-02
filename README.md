@@ -3,5 +3,14 @@
 
 <img width="1440" alt="스크린샷 2021-05-03 오전 12 57 46" src="https://user-images.githubusercontent.com/48133047/116819380-d6b66600-abaa-11eb-89f3-fb4bb1e6d640.png">
 
+## 실제 어플리케이션 사용 캡쳐 화면
 ![merge](https://user-images.githubusercontent.com/48133047/116819269-555ed380-abaa-11eb-881c-f8a4e68fbe0e.png)
 
+### 사용 기술
+
+**Server**: Flask(Python), MySql
+**Client**: Android(Java, xml)
+<br>
+**Communication**: Git, Postman, Notion
+**Release**: AWS EC2, RDS
+**Design**: Adobe XD
