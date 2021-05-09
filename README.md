@@ -1,7 +1,7 @@
 # MOA Flask Server (public)
 ## 대학생 공동구매 플랫폼 MOA
 
-![image](https://user-images.githubusercontent.com/48133047/117577974-20f99300-b127-11eb-841e-bd10ed4c6247.png)
+![image](https://user-images.githubusercontent.com/48133047/117578025-5a320300-b127-11eb-9d6a-43b957e17d7b.png)
 
 ## 실제 어플리케이션 사용 캡쳐 화면
 
