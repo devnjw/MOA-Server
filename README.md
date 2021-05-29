@@ -1,5 +1,5 @@
 # MOA Flask Server (public)
-## 대학생 공동구매 플랫폼 MOA
+## 대학생 공동구매 플랫폼 MOA [[Play Store Link]](https://play.google.com/store/apps/details?id=com.hgu.moa)
 
 ![image](https://user-images.githubusercontent.com/48133047/117578025-5a320300-b127-11eb-9d6a-43b957e17d7b.png)
 
