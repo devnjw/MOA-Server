@@ -3,7 +3,7 @@ from app import db
 class Receipt(db.Model):
     __tablename__ = 'receipt'
     id = db.Column(db.Integer, unique=True, primary_key=True, autoincrement=True)
-    room_id = db.Column(db.Integer, nullable=False)
+    chat_id = db.Column(db.Integer, nullable=False)
     user_id = db.Column(db.VARCHAR(45), nullable=False)
     stuff_name = db.Column(db.VARCHAR(45))
     stuff_img = db.Column(db.VARCHAR(225))
@@ -15,7 +15,7 @@ class Receipt(db.Model):
 class ReceiptImage(db.Model):
     __tablename__ = 'receipt_image'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    room_id = db.Column(db.Integer, nullable=False)
+    chat_id = db.Column(db.Integer, nullable=False)
     user_id = db.Column(db.VARCHAR(45), nullable=False)
     image_path = db.Column(db.VARCHAR(225))
     image_cost = db.Column(db.Integer)
