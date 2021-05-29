@@ -1,8 +1,7 @@
 from app import db
 
 class Chat(db.Model):
-    __tablename__ = 'room'
-    rid = db.Column(db.Integer, unique=True, primary_key=True, autoincrement=True, nullable=False)
+    id = db.Column(db.Integer, unique=True, primary_key=True, autoincrement=True, nullable=False)
     status = db.Column(db.VARCHAR(15))
     category = db.Column(db.VARCHAR(45))
     title = db.Column(db.VARCHAR(45))
