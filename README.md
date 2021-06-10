@@ -3,7 +3,7 @@
 
 ![image](https://user-images.githubusercontent.com/48133047/117578025-5a320300-b127-11eb-9d6a-43b957e17d7b.png)
 
-## 실제 어플리케이션 사용 캡쳐 화면 [시연 영상](https://youtu.be/GZlHQH7zFuM)
+## 실제 어플리케이션 사용 캡쳐 화면 [[시연 영상]](https://youtu.be/GZlHQH7zFuM)
 
 ![merge](https://user-images.githubusercontent.com/48133047/116819269-555ed380-abaa-11eb-881c-f8a4e68fbe0e.png)
 
