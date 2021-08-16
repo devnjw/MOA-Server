@@ -28,4 +28,4 @@
 디자이너: [soohyun4747](https://github.com/soohyun4747)
 
 ### Android Repository:
-https://github.com/devnjw/MOA-Server
+https://github.com/joyfulbean/MOA-APP
